@@ -1,6 +1,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for(i = 0; i < word.length/2; i++){
+    if(word[i] === word[word.length-1]){
+      return true
+    }
+  }
+  return false
 }
+console.log(isPalindrome("racecar"))
+
 
 /* 
   Add your pseudocode here
